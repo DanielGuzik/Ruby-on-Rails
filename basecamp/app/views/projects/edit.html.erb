@@ -1,0 +1,19 @@
+<h1>Edit <%= @project.title %> </h1>
+
+	<%=form_for @project do |f| %>
+		<p>
+			<%= f.label :title %><br>
+			<%= f.text_field :title %>
+		</p>
+		<p>
+			<%= f.label :description %><br>
+			<%= f.text_area :description %>
+		</p>
+		<p>
+			<%= f.label :due_date %><br>
+			<%= f.datetime_local_field :due_date %>
+		</p>
+	<%= f.submit %>
+<% end %>
+
+<p><%= link_to 'Back', root_path %></p>

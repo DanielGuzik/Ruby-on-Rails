@@ -1,0 +1,12 @@
+<h1>Show <%= @project.title %> </h1>
+
+	<p>
+		<strong>Description:</strong>
+		<%= @project.description %>
+	</p>
+	<p>
+		<strong>Due Date:</strong>
+		<%= @project.due_date %>
+	</p>
+
+<%= link_to 'Back', root_path %>
